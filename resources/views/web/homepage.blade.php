@@ -12,13 +12,11 @@ HOME SECTION START
 <section class="home-section" id="home">
     <div class="container">
         <div class="row">
-
             @foreach ($productscategories as $item)
-            
             <div class="col-lg-2 col-md-6 col-sm-12 home-area">
                 <div class="home-pr-s">
                     <div class="card home-product">
-                    <a href="{{route('product.category',$item->slug)}}">
+                        <a href="{{route('product.category',$item->slug)}}">
                             <img class="card-img-top w-100" src="{{asset($item->image)}}">
                         </a>
                     </div>
@@ -28,8 +26,6 @@ HOME SECTION START
                 </div>
             </div>
             @endforeach
-
-
         </div>
     </div>
 
@@ -72,7 +68,6 @@ TODAYS DEAL SECTION START
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-dark slide-btns"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-dark slide-btns"></button>
   </div> -->
-
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container mt-4 d-block w-100">
@@ -80,15 +75,12 @@ TODAYS DEAL SECTION START
                         @foreach ($todayproduct as $item)
                         <div class=" col-lg-3 col-md-6 col-sm-12 mt-lg-0 today-deal-item">
                             <div class="card text-center">
-                                <img class="card-img-top p-2" src="{{asset($item->image)}}">
+                                <img class="card-img-top" src="{{asset($item->image)}}">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center"> {{$item->name}}
-
-                                        <button type="submit" data-id="{{ $item->id }}" class="product_id">
-                                            <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
-                                        </button>
-
-                                    </h4>
+                                    <h4 class="card-title text-center"> {{$item->name}}</h4>
+                                    <button type="submit" data-id="{{ $item->id }}" class="product_id">
+                                        <i class="fas fa-cart-plus" id="heart1" black;transform:="" translate(-852%,="" -284%);=""></i>
+                                    </button><br>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
@@ -99,7 +91,6 @@ TODAYS DEAL SECTION START
                             </div>
                         </div>
                         @endforeach
-
                     </div>
                 </div>
             </div>
@@ -165,13 +156,10 @@ FEATURED SECTION START
                             <div class="card text-center">
                                 <img class="card-img-top p-2" src="{{asset($item->image)}}">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center"> {{$item->name}}
-
-                                        <button type="submit" data-id="{{ $item->id }}" class="product_id">
-                                            <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
-                                        </button>
-
-                                    </h4>
+                                    <h4 class="card-title text-center"> {{$item->name}}</h4>
+                                    <button type="submit" data-id="{{ $item->id }}" class="product_id">
+                                        <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
+                                    </button><br>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
@@ -248,13 +236,10 @@ CATEGORIES SECTION START
                             <div class="card text-center">
                                 <img class="card-img-top p-2" src="{{asset($item->image)}}">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center"> {{$item->name}}
-
-                                        <button type="submit" data-id="{{ $item->id }}" class="product_id">
-                                            <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
-                                        </button>
-
-                                    </h4>
+                                    <h4 class="card-title text-center"> {{$item->name}}</h4>
+                                    <button type="submit" data-id="{{ $item->id }}" class="product_id">
+                                        <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
+                                    </button><br>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
@@ -332,7 +317,7 @@ CATEGORIES SECTION START
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="download-image">
-                    <img src="{{asset('/')}}assets/images/d.png" alt="download-image">
+                    <img src="{{asset('assets/images/d.png')}}" alt="download-image">
                 </div>
             </div>
         </div>

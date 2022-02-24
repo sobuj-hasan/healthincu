@@ -49,13 +49,10 @@ TODAYS DEAL SECTION START
                             <div class="card text-center">
                                 <img class="card-img-top p-2" src="{{asset($item->image)}}">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center"> {{$item->name}}
-
-                                        <button type="submit" data-id="{{ $item->id }}" class="product_id">
-                                            <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
-                                        </button>
-
-                                    </h4>
+                                    <h4 class="card-title text-center"> {{$item->name}}</h4>
+                                    <button type="submit" data-id="{{ $item->id }}" class="product_id">
+                                        <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
+                                    </button><br>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
@@ -132,13 +129,10 @@ FEATURED SECTION START
                             <div class="card text-center">
                                 <img class="card-img-top p-2" src="{{asset($item->image)}}">
                                 <div class="card-body">
-                                    <h4 class="card-title text-center"> {{$item->name}}
-
-                                        <button type="submit" data-id="{{ $item->id }}" class="product_id">
-                                            <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
-                                        </button>
-
-                                    </h4>
+                                    <h4 class="card-title text-center"> {{$item->name}}</h4>
+                                    <button type="submit" data-id="{{ $item->id }}" class="product_id">
+                                        <i class="fas fa-cart-plus" id="heart1" font-size:="" 20px;color:="" black;transform:="" translate(-852%,="" -284%);=""></i>
+                                    </button><br>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>
                                     <span class="fa fa-star"></span>

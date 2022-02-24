@@ -474,7 +474,7 @@
                 success: function(data){
                     showcartcount();
                   if ($.isEmptyObject(data.error)) {
-                        toastr.success(data.success, 'Product Cart Add Success', {
+                        toastr.success(data.success, 'Product Successfully Add to Cart', {
                             timeOut: 3000
                         });
                     } else {
@@ -508,7 +508,7 @@
                     success: function(data){
                          showcartcount();
                       if ($.isEmptyObject(data.error)) {
-                            toastr.success(data.success, 'Product Cart Add Success', {
+                            toastr.success(data.success, 'Product Successfully Add to Cart', {
                                 timeOut: 3000
                             });
                         } else {

@@ -4009,6 +4009,13 @@ WEBSITE TITLE SECTION END
         cursor: pointer;
     }
 
+    .card-body button{
+        border: none;
+        background: none;
+        font-size: 20px;
+        outline: none;
+    }
+
     [type=button], [type=reset], [type=submit], button {
         -webkit-appearance: button;
     }

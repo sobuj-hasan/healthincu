@@ -32,10 +32,10 @@
                             <div class="sec-topbar-left">
                                 <div class="topbar-menu">
                                     @if (Auth::check())
-                                    <form action="{{route('logout')}}" method="post">
-                                        @csrf
-                                            <button type="submit">Logout</button>
-                                        </form>
+                                        <a href="{{route('dashboard')}}" class="side-b">
+                                            <i class="fas fa-user-circle mx-2" aria-hidden="true"></i>
+                                            Account 
+                                        </a>
                                     @endif
 
                                     @if (!Auth::check())
@@ -64,11 +64,11 @@
 
                                     <div class="btn-group" role="group">
                                         <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                          Dropdown
+                                          Register 
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                           <a class="dropdown-item" href="{{route('register')}}">User Registration</a>
-                                          <a class="dropdown-item" href="{{route('vendor.register')}}">Vendor Registration</a>
+                                          <a class="dropdown-item" href="{{route('vendor.register')}}">Doctor Registration</a>
                                         </div>
                                     </div>
                                 </div>

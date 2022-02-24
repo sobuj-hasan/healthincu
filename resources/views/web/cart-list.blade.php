@@ -216,7 +216,7 @@ CATEGORIES SECTION START
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="download-image">
-            <img src="assets/images/d.png" alt="download-image">
+            <img src="{{ asset('assets/images/d.png') }}" alt="download-image">
           </div>
         </div>
       </div>

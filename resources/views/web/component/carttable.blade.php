@@ -25,7 +25,6 @@
               <li><i class="fa fa-star" aria-hidden="true"></i></li>
               <li><i class="fas fa-star-half-alt"></i></li>
             </ul>
-
           </div>
         </div>
       </th>
@@ -34,7 +33,7 @@
           <h4>SAR {{$product->price}}</h4>
         </div>
       </th>
-      <th scope="col">
+      <th scope="col align-middle">
         <select name="qty" class="incrementCart-{{ $product->rowId }}" onchange="updateCartQty({{ $product->rowId }})">
                 <option value="1" {{$product->qty == 1 ? 'selected' : ''}}>1 pcs</option>
                 <option value="2" {{$product->qty == 2 ? 'selected' : ''}}>2 pcs</option>

@@ -58,8 +58,7 @@ Route::namespace('Web')->group(function () {
 
         Route::post('products/cart/store','ShoppingCartController@cartStore')->name('product.cart.store');
         // Route::get('products/billing','ShoppingCartController@productsbilling')->name('product.billing');
-
-});
+    });
 
 
 require __DIR__.'/auth.php';

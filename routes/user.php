@@ -15,8 +15,6 @@ Route::prefix('user')
         Route::get('/order/billing/{id}', 'UserController@orderBilling')->name('order.billing');
 
 
-
-
     });
 
 
