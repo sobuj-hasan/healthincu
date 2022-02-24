@@ -1,6 +1,12 @@
+@php
+    $locale = app()->getLocale();
+@endphp
 <!doctype html>
-<html lang="en" dir>
-
+@if ($locale == 'ar')
+    <html lang="ar" dir="rtl">
+@else
+    <html lang="en" dir="auto">
+@endif
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -11,7 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{ asset('/') }}assets/css/bootstrap.min.css">
+  @if ($locale == 'ar')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css">
+  @else
+    <link rel="stylesheet" href="{{ asset('/') }}assets/css/bootstrap.min.css">
+  @endif
   <link rel="stylesheet" href="{{ asset('/') }}assets/css/all.min.css">
   <link rel="stylesheet" href="{{ asset('/') }}assets/css/slick.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -19,6 +29,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" />
   <link rel="stylesheet" href="{{ asset('/') }}assets/css/style.css">
+  @if ($locale == 'ar')
+    <link rel="stylesheet" href="{{ asset('/') }}assets/css/arabic.css">
+  @endif
 </head>
 
     @include('web.layouts.inc.header')

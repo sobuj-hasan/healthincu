@@ -493,7 +493,6 @@ SECOND TOP BAR START
 }
 
 .side-b {
-    border-right: 1px solid #363535c9;
     padding-right: 14px;
 }
 
@@ -1960,7 +1959,6 @@ WEBSITE TITLE SECTION END
 
 
     .side-b {
-        border-right: 1px solid #363535c9;
         padding-right: 5px;
     }
 
@@ -2274,7 +2272,6 @@ SECOND TOP BAR START
     }
 
     .side-b {
-        border-right: 1px solid #363535c9;
         padding-right: 14px;
     }
 
@@ -3316,9 +3313,7 @@ WEBSITE TITLE SECTION END
 
     /* ============================== 1. Start of Top bar ============================= */
 
-
     /* [New Updated V.0.1 - line 396] */
-
     .dropdown-menu-right {
         position: absolute;
         transform: translate3d(-45px, 26px, 0px);
@@ -3346,7 +3341,6 @@ WEBSITE TITLE SECTION END
         padding: 0px 0px;
     }
 
-
     .topbar p a {
         color: #fff;
         text-decoration: underline;
@@ -3362,9 +3356,11 @@ WEBSITE TITLE SECTION END
         width: 243px;
         font-size: 18px;
     }
+    .lang a{
+        font-size: 16px;
+    }
 
-
-    /* ===========================
+/* ===========================
 SECOND TOP BAR START 
 =========================== */
 
@@ -3483,8 +3479,8 @@ SECOND TOP BAR START
     }
 
     .side-b {
-        border-right: 1px solid #363535c9;
         padding-right: 14px;
+        font-size: 16px;
     }
 
     .fa-user-circle:before {

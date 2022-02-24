@@ -71,6 +71,14 @@
                                           <a class="dropdown-item" href="{{route('vendor.register')}}">Doctor Registration</a>
                                         </div>
                                     </div>
+                                    <span class="mx-2"></span>
+                                    <div class="lang ml-3 mt-3">
+                                        @if ($locale == 'ar')
+                                            <a href="{{ request()->fullUrlWithQuery(['lang' => 'en']) }}">@lang('trans.english')</a>
+                                        @else
+                                            <a href="{{ request()->fullUrlWithQuery(['lang' => 'ar']) }}">@lang('trans.arabic')</a>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
 
